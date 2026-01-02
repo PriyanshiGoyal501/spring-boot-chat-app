@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Chat App</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <h1>Chat Application</h1>
+
+      <ul id="messages" class="messages"></ul>
+
+      <form id="chat-form">
+        <input type="text" id="sender" placeholder="Your name" required />
+        <input type="text" id="message" placeholder="Type a message" required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- SockJS & StompJS -->
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+    <script src="/js/chat.js"></script>
+  </body>
+</html>
